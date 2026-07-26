@@ -1,9 +1,4 @@
 # Gem Craft
 
-## Setup
-
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod was created by mazen9996 while following Kaupenjoe's Fabric tutorial series. It contains original items, textures, mechanics, and gameplay additions beyond the tutorial. The original tutorial code is licensed under the MIT License; see the LICENSE file for details.
+Kaupenjoe's Channel: www.youtube.com/@ModdingByKaupenjoe
