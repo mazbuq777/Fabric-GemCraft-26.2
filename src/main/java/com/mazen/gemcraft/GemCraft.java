@@ -1,5 +1,8 @@
 package com.mazen.gemcraft;
 
+import com.mazen.gemcraft.block.ModBlocks;
+import com.mazen.gemcraft.creativemodetab.ModCreativeModeTabs;
+import com.mazen.gemcraft.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,6 +13,9 @@ public class GemCraft implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }

@@ -1,0 +1,20 @@
+{
+  "item.gemcraft.ruby": "Ruby",
+  "item.gemcraft.sapphire": "Sapphire",
+  "item.gemcraft.topaz": "Topaz",
+
+  "block.gemcraft.ruby_block": "Block of Ruby",
+  "block.gemcraft.sapphire_block": "Block of Sapphire",
+  "block.gemcraft.topaz_block": "Block of Topaz",
+
+  "block.gemcraft.ruby_ore": "Ruby Ore",
+  "block.gemcraft.sapphire_ore": "Sapphire Ore",
+  "block.gemcraft.topaz_ore": "Topaz Ore",
+
+  "block.gemcraft.ruby_deepslate_ore": "Deepslate Ruby Ore",
+  "block.gemcraft.sapphire_deepslate_ore": "Deepslate Sapphire Ore",
+  "block.gemcraft.topaz_deepslate_ore": "Deepslate Topaz Ore",
+
+  "creativemodetab.gemcraft.gemcraft_items": "GemCraft Items",
+  "creativemodetab.gemcraft.gemcraft_blocks": "GemCraft Blocks"
+}
