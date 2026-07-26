@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "gemcraft",
+	"version": "${version}",
+	"name": "Gem Craft",
+	"description": "Gem Craft Introduces Many Tools and Armour Made Out of Gems!",
+	"authors": [
+		"Mazen9996"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "MIT-Licence",
+	"icon": "assets/gemcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mazen.gemcraft.GemCraft"
+		],
+		"fabric-datagen": [
+			"com.mazen.gemcraft.GemCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"gemcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
