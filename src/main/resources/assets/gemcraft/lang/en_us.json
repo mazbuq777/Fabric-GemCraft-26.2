@@ -3,6 +3,8 @@
   "item.gemcraft.sapphire": "Sapphire",
   "item.gemcraft.topaz": "Topaz",
 
+  "item.gemcraft.magic_wand": "Magic Wand",
+
   "block.gemcraft.ruby_block": "Block of Ruby",
   "block.gemcraft.sapphire_block": "Block of Sapphire",
   "block.gemcraft.topaz_block": "Block of Topaz",
@@ -14,6 +16,14 @@
   "block.gemcraft.ruby_deepslate_ore": "Deepslate Ruby Ore",
   "block.gemcraft.sapphire_deepslate_ore": "Deepslate Sapphire Ore",
   "block.gemcraft.topaz_deepslate_ore": "Deepslate Topaz Ore",
+
+  "block.gemcraft.ruby_nether_ore": "Nether Ruby Ore",
+  "block.gemcraft.sapphire_nether_ore": "Nether Sapphire Ore",
+  "block.gemcraft.topaz_nether_ore": "Nether Topaz Ore",
+
+  "block.gemcraft.ruby_end_ore": "End Ruby Ore",
+  "block.gemcraft.sapphire_end_ore": "End Sapphire Ore",
+  "block.gemcraft.topaz_end_ore": "End Topaz Ore",
 
   "creativemodetab.gemcraft.gemcraft_items": "GemCraft Items",
   "creativemodetab.gemcraft.gemcraft_blocks": "GemCraft Blocks"

@@ -30,6 +30,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_DEEPSLATE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_DEEPSLATE_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.TOPAZ_DEEPSLATE_ORE);
+
+        //Gem nether ores
+        blockModelGenerators.createTrivialCube(ModBlocks.RUBY_NETHER_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_NETHER_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.TOPAZ_NETHER_ORE);
+
+        //Gem end ores
+        blockModelGenerators.createTrivialCube(ModBlocks.RUBY_END_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_END_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.TOPAZ_END_ORE);
     }
 
     //Add items to generate its model
@@ -39,6 +49,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.RUBY, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.SAPPHIRE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.TOPAZ, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(ModItems.MAGIC_WAND, ModelTemplates.FLAT_HANDHELD_ITEM);
 
     }
 }

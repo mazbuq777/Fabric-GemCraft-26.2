@@ -52,6 +52,28 @@ public class ModBlocks {
                             .mapColor(MapColor.DEEPSLATE)));
     //Block end
 
+    //Ruby nether ore
+    //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
+    public static final Block RUBY_NETHER_ORE = registerBlock("ruby_nether_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    properties
+                            //Properties
+                            .strength(3f, 3f)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.NETHER)));
+    //Block end
+
+    //Ruby end ore
+    //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
+    public static final Block RUBY_END_ORE = registerBlock("ruby_end_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    properties
+                            //Properties
+                            .strength(3f, 6f)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.SAND)));
+    //Block end
+
     //Sapphire block
     //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
@@ -83,6 +105,28 @@ public class ModBlocks {
                             .strength(4.5f, 3f)
                             .requiresCorrectToolForDrops()
                             .mapColor(MapColor.DEEPSLATE)));
+    //Block end
+
+    //Sapphire nether ore
+    //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
+    public static final Block SAPPHIRE_NETHER_ORE = registerBlock("sapphire_nether_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    properties
+                            //Properties
+                            .strength(3f, 3f)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.NETHER)));
+    //Block end
+
+    //Sapphire end ore
+    //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
+    public static final Block SAPPHIRE_END_ORE = registerBlock("sapphire_end_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    properties
+                            //Properties
+                            .strength(3f, 6f)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.SAND)));
     //Block end
 
     //Topaz block
@@ -118,6 +162,28 @@ public class ModBlocks {
                             .mapColor(MapColor.DEEPSLATE)));
     //Block end
 
+    //Topaz nether ore
+    //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
+    public static final Block TOPAZ_NETHER_ORE = registerBlock("topaz_nether_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    properties
+                            //Properties
+                            .strength(3f, 3f)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.NETHER)));
+    //Block end
+
+    //Topaz end ore
+    //Blocks start            Name of block variable            Name of block reference (copy this to use in en_us.json)
+    public static final Block TOPAZ_END_ORE = registerBlock("topaz_end_ore",
+            properties -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    properties
+                            //Properties
+                            .strength(3f, 6f)
+                            .requiresCorrectToolForDrops()
+                            .mapColor(MapColor.SAND)));
+    //Block end
+
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
@@ -130,6 +196,10 @@ public class ModBlocks {
         Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, name),
                 new BlockItem(block, new Item.Properties().useBlockDescriptionPrefix()
                         .setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, name)))));
+    }
+
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }
 
     public static void registerModBlocks() {

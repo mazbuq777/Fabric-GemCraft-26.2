@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPPHIRE);
                         output.accept(ModItems.TOPAZ);
 
+                        output.accept(ModItems.MAGIC_WAND);
+
 
                     }).build());
     //Tab end
@@ -55,6 +57,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RUBY_DEEPSLATE_ORE);
                         output.accept(ModBlocks.SAPPHIRE_DEEPSLATE_ORE);
                         output.accept(ModBlocks.TOPAZ_DEEPSLATE_ORE);
+
+                        //Gem nether ores
+                        output.accept(ModBlocks.RUBY_NETHER_ORE);
+                        output.accept(ModBlocks.SAPPHIRE_NETHER_ORE);
+                        output.accept(ModBlocks.TOPAZ_NETHER_ORE);
+
+                        //Gem end ores
+                        output.accept(ModBlocks.RUBY_END_ORE);
+                        output.accept(ModBlocks.SAPPHIRE_END_ORE);
+                        output.accept(ModBlocks.TOPAZ_END_ORE);
 
 
                     }).build());
