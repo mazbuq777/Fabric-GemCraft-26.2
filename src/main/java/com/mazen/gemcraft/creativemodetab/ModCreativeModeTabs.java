@@ -27,7 +27,66 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SAPPHIRE);
                         output.accept(ModItems.TOPAZ);
 
+                    }).build());
+    //Tab end
+
+    //Tab start
+    public static final CreativeModeTab GEMCRAFT_TOOLS_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "gemcraft_tools"),// Change here
+            FabricCreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.RUBY_PICKAXE)) // Icon
+                    .title(Component.translatable("creativemodetab.gemcraft.gemcraft_tools")) //Name of tab
+                    .displayItems((parameters, output) -> {
                         output.accept(ModItems.MAGIC_WAND);
+
+                        output.accept(ModItems.RUBY_SWORD);
+                        output.accept(ModItems.RUBY_PICKAXE);
+                        output.accept(ModItems.RUBY_AXE);
+                        output.accept(ModItems.RUBY_SHOVEL);
+                        output.accept(ModItems.RUBY_HOE);
+                        output.accept(ModItems.RUBY_SPEAR);
+
+                        output.accept(ModItems.SAPPHIRE_SWORD);
+                        output.accept(ModItems.SAPPHIRE_PICKAXE);
+                        output.accept(ModItems.SAPPHIRE_AXE);
+                        output.accept(ModItems.SAPPHIRE_SHOVEL);
+                        output.accept(ModItems.SAPPHIRE_HOE);
+                        output.accept(ModItems.SAPPHIRE_SPEAR);
+
+                        output.accept(ModItems.TOPAZ_SWORD);
+                        output.accept(ModItems.TOPAZ_PICKAXE);
+                        output.accept(ModItems.TOPAZ_AXE);
+                        output.accept(ModItems.TOPAZ_SHOVEL);
+                        output.accept(ModItems.TOPAZ_HOE);
+                        output.accept(ModItems.TOPAZ_SPEAR);
+
+
+                    }).build());
+    //Tab end
+
+    //Tab start
+    public static final CreativeModeTab GEMCRAFT_ARMOR_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "gemcraft_armor"),// Change here
+            FabricCreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.RUBY_HELMET)) // Icon
+                    .title(Component.translatable("creativemodetab.gemcraft.gemcraft_armor")) //Name of tab
+                    .displayItems((parameters, output) -> {
+
+                        // Items within tab
+                        output.accept(ModItems.RUBY_HELMET);
+                        output.accept(ModItems.RUBY_CHESTPLATE);
+                        output.accept(ModItems.RUBY_LEGGINGS);
+                        output.accept(ModItems.RUBY_BOOTS);
+
+                        output.accept(ModItems.SAPPHIRE_HELMET);
+                        output.accept(ModItems.SAPPHIRE_CHESTPLATE);
+                        output.accept(ModItems.SAPPHIRE_LEGGINGS);
+                        output.accept(ModItems.SAPPHIRE_BOOTS);
+
+                        output.accept(ModItems.TOPAZ_HELMET);
+                        output.accept(ModItems.TOPAZ_CHESTPLATE);
+                        output.accept(ModItems.TOPAZ_LEGGINGS);
+                        output.accept(ModItems.TOPAZ_BOOTS);
 
 
                     }).build());

@@ -5,6 +5,43 @@
 
   "item.gemcraft.magic_wand": "Magic Wand",
 
+  "item.gemcraft.ruby_sword":   "Ruby Sword",
+  "item.gemcraft.ruby_pickaxe": "Ruby Pickaxe",
+  "item.gemcraft.ruby_axe":     "Ruby Axe",
+  "item.gemcraft.ruby_shovel":  "Ruby Shovel",
+  "item.gemcraft.ruby_hoe":     "Ruby Hoe",
+  "item.gemcraft.ruby_spear":   "Ruby Spear",
+
+  "item.gemcraft.sapphire_sword":   "Sapphire Sword",
+  "item.gemcraft.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.gemcraft.sapphire_axe":     "Sapphire Axe",
+  "item.gemcraft.sapphire_shovel":  "Sapphire Shovel",
+  "item.gemcraft.sapphire_hoe":     "Sapphire Hoe",
+  "item.gemcraft.sapphire_spear":   "Sapphire Spear",
+
+  "item.gemcraft.topaz_sword":   "Topaz Sword",
+  "item.gemcraft.topaz_pickaxe": "Topaz Pickaxe",
+  "item.gemcraft.topaz_axe":     "Topaz Axe",
+  "item.gemcraft.topaz_shovel":  "Topaz Shovel",
+  "item.gemcraft.topaz_hoe":     "Topaz Hoe",
+  "item.gemcraft.topaz_spear":   "Topaz Spear",
+
+  "item.gemcraft.ruby_helmet":      "Ruby Helmet",
+  "item.gemcraft.ruby_chestplate":  "Ruby Chestplate",
+  "item.gemcraft.ruby_leggings":    "Ruby Leggings",
+  "item.gemcraft.ruby_boots":       "Ruby Boots",
+
+  "item.gemcraft.sapphire_helmet":      "Sapphire Helmet",
+  "item.gemcraft.sapphire_chestplate":  "Sapphire Chestplate",
+  "item.gemcraft.sapphire_leggings":    "Sapphire Leggings",
+  "item.gemcraft.sapphire_boots":       "Sapphire Boots",
+
+  "item.gemcraft.topaz_helmet":      "Topaz Helmet",
+  "item.gemcraft.topaz_chestplate":  "Topaz Chestplate",
+  "item.gemcraft.topaz_leggings":    "Topaz Leggings",
+  "item.gemcraft.topaz_boots":       "Topaz Boots",
+
+
   "block.gemcraft.ruby_block": "Block of Ruby",
   "block.gemcraft.sapphire_block": "Block of Sapphire",
   "block.gemcraft.topaz_block": "Block of Topaz",
@@ -26,5 +63,10 @@
   "block.gemcraft.topaz_end_ore": "End Topaz Ore",
 
   "creativemodetab.gemcraft.gemcraft_items": "GemCraft Items",
-  "creativemodetab.gemcraft.gemcraft_blocks": "GemCraft Blocks"
+  "creativemodetab.gemcraft.gemcraft_blocks": "GemCraft Blocks",
+
+  "tooltip.gemcraft.magic_wand": "Press §eShift§r for more information",
+  "tooltip.gemcraft.magic_wand.shift_down": "Change Gem Blocks Into Other Gem Blocks!",
+  "creativemodetab.gemcraft.gemcraft_tools": "GemCraft Tools",
+  "creativemodetab.gemcraft.gemcraft_armor": "GemCraft Armor"
 }

@@ -1,9 +1,6 @@
 package com.mazen.gemcraft;
 
-import com.mazen.gemcraft.datagen.ModBlockLootTableProvider;
-import com.mazen.gemcraft.datagen.ModBlockTagsProvider;
-import com.mazen.gemcraft.datagen.ModModelProvider;
-import com.mazen.gemcraft.datagen.ModRecipeProvider;
+import com.mazen.gemcraft.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -16,5 +13,7 @@ public class GemCraftDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModItemTagsProvider::new);
+		pack.addProvider(ModEquipmentAssetProvider::new);
 	}
 }

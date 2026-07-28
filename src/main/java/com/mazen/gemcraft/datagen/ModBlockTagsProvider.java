@@ -1,6 +1,7 @@
 package com.mazen.gemcraft.datagen;
 
 import com.mazen.gemcraft.block.ModBlocks;
+import com.mazen.gemcraft.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -61,7 +62,14 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
 
                 .add(ModBlocks.getRK(ModBlocks.RUBY_END_ORE))
                 .add(ModBlocks.getRK(ModBlocks.SAPPHIRE_END_ORE))
-                .add(ModBlocks.getRK(ModBlocks.TOPAZ_END_ORE))
-        ;
+                .add(ModBlocks.getRK(ModBlocks.TOPAZ_END_ORE));
+
+        tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+        tag(ModTags.Blocks.NEEDS_TOPAZ_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
     }
 }

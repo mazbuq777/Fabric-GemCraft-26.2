@@ -76,6 +76,176 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
                         .save(this.output);
 
+                //Ruby tools start
+                shaped(RecipeCategory.COMBAT, ModItems.RUBY_SWORD)
+                        .pattern("R")
+                        .pattern("R")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.RUBY_PICKAXE)
+                        .pattern("RRR")
+                        .pattern(" # ")
+                        .pattern(" # ")
+                        .define('#', Items.STICK)
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.RUBY_AXE)
+                        .pattern("RR")
+                        .pattern("#R")
+                        .pattern("# ")
+                        .define('#', Items.STICK)
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.RUBY_SHOVEL)
+                        .pattern("R")
+                        .pattern("#")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.RUBY_HOE)
+                        .pattern("RR")
+                        .pattern("# ")
+                        .pattern("# ")
+                        .define('#', Items.STICK)
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.RUBY_SPEAR)
+                        .pattern("  R")
+                        .pattern(" # ")
+                        .pattern("#  ")
+                        .define('#', Items.STICK)
+                        .define('R', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
+                        .save(this.output);
+                //Ruby tools end-------------------------------------------------
+
+                //Sapphire tools start-------------------------------------------
+                shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SWORD)
+                        .pattern("S")
+                        .pattern("S")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('S', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_PICKAXE)
+                        .pattern("SSS")
+                        .pattern(" # ")
+                        .pattern(" # ")
+                        .define('#', Items.STICK)
+                        .define('S', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_AXE)
+                        .pattern("SS")
+                        .pattern("#S")
+                        .pattern("# ")
+                        .define('#', Items.STICK)
+                        .define('S', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_SHOVEL)
+                        .pattern("S")
+                        .pattern("#")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('S', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_HOE)
+                        .pattern("SS")
+                        .pattern("# ")
+                        .pattern("# ")
+                        .define('#', Items.STICK)
+                        .define('S', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SPEAR)
+                        .pattern("  S")
+                        .pattern(" # ")
+                        .pattern("#  ")
+                        .define('#', Items.STICK)
+                        .define('S', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
+                        .save(this.output);
+
+                //Sapphire end------------------------------------------------------
+
+                //Topaz start
+                shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_SWORD)
+                        .pattern(" T ")
+                        .pattern(" T ")
+                        .pattern(" # ")
+                        .define('#', Items.STICK)
+                        .define('T', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.TOPAZ_PICKAXE)
+                        .pattern("TTT")
+                        .pattern(" # ")
+                        .pattern(" # ")
+                        .define('#', Items.STICK)
+                        .define('T', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.TOPAZ_AXE)
+                        .pattern("TT")
+                        .pattern("#T")
+                        .pattern("# ")
+                        .define('#', Items.STICK)
+                        .define('T', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.TOPAZ_SHOVEL)
+                        .pattern("T")
+                        .pattern("#")
+                        .pattern("#")
+                        .define('#', Items.STICK)
+                        .define('T', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.TOOLS, ModItems.TOPAZ_HOE)
+                        .pattern("TT")
+                        .pattern("# ")
+                        .pattern("# ")
+                        .define('#', Items.STICK)
+                        .define('T', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_SPEAR)
+                        .pattern("  T")
+                        .pattern(" # ")
+                        .pattern("#  ")
+                        .define('#', Items.STICK)
+                        .define('T', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
+                        .save(this.output);
+
+                //Topaz end------------------------------------------------------
+
             }
         };
     }
