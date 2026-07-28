@@ -38,6 +38,8 @@ public class ModTags {
         public static final TagKey<Item> SAPPHIRE_REPAIR = createTag("sapphire_repair");
         public static final TagKey<Item> TOPAZ_REPAIR = createTag("topaz_repair");
 
+        public static final TagKey<Item> GEMS = createTag("gems");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, name));
         }

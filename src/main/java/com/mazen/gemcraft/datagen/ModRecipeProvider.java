@@ -2,6 +2,7 @@ package com.mazen.gemcraft.datagen;
 
 import com.mazen.gemcraft.block.ModBlocks;
 import com.mazen.gemcraft.item.ModItems;
+import com.mazen.gemcraft.tags.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.core.HolderLookup;
@@ -64,19 +65,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 //Add recipes here
 
                 shaped(RecipeCategory.TOOLS, ModItems.MAGIC_WAND)
-                        .pattern("TRS")
-                        .pattern(" # ")
-                        .pattern(" # ")
+                        .pattern(" GG")
+                        .pattern(" #G")
+                        .pattern("#  ")
                         .define('#', Items.STICK)
-                        .define('T', ModItems.TOPAZ)
-                        .define('R', ModItems.RUBY)
-                        .define('S', ModItems.SAPPHIRE)
+                        .define('G', ModTags.Items.GEMS)
                         .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
                         .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
                         .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
                         .save(this.output);
 
-                //Ruby tools start
+                //Ruby tools start==============================================
                 shaped(RecipeCategory.COMBAT, ModItems.RUBY_SWORD)
                         .pattern("R")
                         .pattern("R")
@@ -130,9 +129,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('R', ModItems.RUBY)
                         .unlockedBy(getHasName(ModItems.RUBY), has(Items.STICK))
                         .save(this.output);
-                //Ruby tools end-------------------------------------------------
+                //Ruby tools end=================================================
 
-                //Sapphire tools start-------------------------------------------
+                //Ruby armor start===============================================
+
+                shaped(RecipeCategory.COMBAT, ModItems.RUBY_HELMET)
+                        .pattern("GGG")
+                        .pattern("G G")
+                        .define('G', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.RUBY_CHESTPLATE)
+                        .pattern("G G")
+                        .pattern("GGG")
+                        .pattern("GGG")
+                        .define('G', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.RUBY_LEGGINGS)
+                        .pattern("GGG")
+                        .pattern("G G")
+                        .pattern("G G")
+                        .define('G', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.RUBY_BOOTS)
+                        .pattern("G G")
+                        .pattern("G G")
+                        .define('G', ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .save(this.output);
+
+                //Ruby armor end=================================================
+
+                //Sapphire tools start===========================================
                 shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_SWORD)
                         .pattern("S")
                         .pattern("S")
@@ -187,9 +220,43 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.SAPPHIRE), has(Items.STICK))
                         .save(this.output);
 
-                //Sapphire end------------------------------------------------------
+                //Sapphire end=======================================================
 
-                //Topaz start
+                //Sapphire armor start===============================================
+
+                shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_HELMET)
+                        .pattern("GGG")
+                        .pattern("G G")
+                        .define('G', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_CHESTPLATE)
+                        .pattern("G G")
+                        .pattern("GGG")
+                        .pattern("GGG")
+                        .define('G', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_LEGGINGS)
+                        .pattern("GGG")
+                        .pattern("G G")
+                        .pattern("G G")
+                        .define('G', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.SAPPHIRE_BOOTS)
+                        .pattern("G G")
+                        .pattern("G G")
+                        .define('G', ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
+                        .save(this.output);
+
+                //Sapphire armor end=================================================
+
+                //Topaz start========================================================
                 shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_SWORD)
                         .pattern(" T ")
                         .pattern(" T ")
@@ -244,7 +311,41 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModItems.TOPAZ), has(Items.STICK))
                         .save(this.output);
 
-                //Topaz end------------------------------------------------------
+                //Topaz end=========================================================
+
+                //Topaz armor start===============================================
+
+                shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_HELMET)
+                        .pattern("GGG")
+                        .pattern("G G")
+                        .define('G', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(ModItems.TOPAZ))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_CHESTPLATE)
+                        .pattern("G G")
+                        .pattern("GGG")
+                        .pattern("GGG")
+                        .define('G', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(ModItems.TOPAZ))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_LEGGINGS)
+                        .pattern("GGG")
+                        .pattern("G G")
+                        .pattern("G G")
+                        .define('G', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(ModItems.TOPAZ))
+                        .save(this.output);
+
+                shaped(RecipeCategory.COMBAT, ModItems.TOPAZ_BOOTS)
+                        .pattern("G G")
+                        .pattern("G G")
+                        .define('G', ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(ModItems.TOPAZ))
+                        .save(this.output);
+
+                //Topaz armor end=================================================
 
             }
         };
