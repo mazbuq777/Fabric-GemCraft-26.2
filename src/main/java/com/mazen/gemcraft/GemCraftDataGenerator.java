@@ -1,6 +1,10 @@
 package com.mazen.gemcraft;
 
 import com.mazen.gemcraft.datagen.*;
+import com.mazen.gemcraft.world.feature.ModConfiguredFeatures;
+import com.mazen.gemcraft.world.feature.ModPlacedFeatures;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
@@ -15,5 +19,12 @@ public class GemCraftDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModEquipmentAssetProvider::new);
+		pack.addProvider(ModWorldgenProvider::new);
+	}
+
+	@Override
+	public void buildRegistry(RegistrySetBuilder registryBuilder) {
+		registryBuilder.add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 	}
 }

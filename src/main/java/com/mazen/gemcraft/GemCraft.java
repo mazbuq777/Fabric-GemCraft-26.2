@@ -3,6 +3,7 @@ package com.mazen.gemcraft;
 import com.mazen.gemcraft.block.ModBlocks;
 import com.mazen.gemcraft.creativemodetab.ModCreativeModeTabs;
 import com.mazen.gemcraft.item.ModItems;
+import com.mazen.gemcraft.world.feature.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,5 +18,6 @@ public class GemCraft implements ModInitializer {
 
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateOres();
 	}
 }
