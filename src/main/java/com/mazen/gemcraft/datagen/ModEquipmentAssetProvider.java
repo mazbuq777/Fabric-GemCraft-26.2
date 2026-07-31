@@ -40,6 +40,11 @@ public class ModEquipmentAssetProvider implements DataProvider {
                 EquipmentClientInfo.builder()
                         .addHumanoidLayers(Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "topaz"))
                         .build());
+
+        consumer.accept(ModArmorMaterials.CROWN_KEY,
+                EquipmentClientInfo.builder()
+                        .addHumanoidLayers(Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "crown"))
+                        .build());
     }
 
 

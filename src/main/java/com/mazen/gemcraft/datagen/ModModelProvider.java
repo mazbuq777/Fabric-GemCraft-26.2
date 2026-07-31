@@ -89,5 +89,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateTrimmableItem(ModItems.TOPAZ_LEGGINGS, ModArmorMaterials.    TOPAZ_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
         itemModelGenerators.generateTrimmableItem(ModItems.TOPAZ_BOOTS, ModArmorMaterials.       TOPAZ_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
 
+        itemModelGenerators.generateTrimmableItem(ModItems.DIAMOND_CROWN, ModArmorMaterials.CROWN_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+
     }
 }

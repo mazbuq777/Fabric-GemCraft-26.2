@@ -64,6 +64,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.SAPPHIRE_END_ORE))
                 .add(ModBlocks.getRK(ModBlocks.TOPAZ_END_ORE));
 
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                //Gem blocks can work for beacons
+                .add(ModBlocks.getRK(ModBlocks.RUBY_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.SAPPHIRE_BLOCK))
+                .add(ModBlocks.getRK(ModBlocks.TOPAZ_BLOCK));
+
         tag(ModTags.Blocks.NEEDS_RUBY_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
         tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL)

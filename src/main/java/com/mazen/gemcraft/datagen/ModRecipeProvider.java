@@ -347,6 +347,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
                 //Topaz armor end=================================================
 
+                shaped(RecipeCategory.COMBAT, ModItems.DIAMOND_CROWN)
+                        .pattern("RDR")
+                        .pattern("GGG")
+                        .define('R', ModItems.RUBY)
+                        .define('D', Items.DIAMOND)
+                        .define('G', Items.GOLD_INGOT)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .save(this.output);
+
             }
         };
     }

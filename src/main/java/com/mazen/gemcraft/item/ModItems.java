@@ -125,6 +125,10 @@ public class ModItems {
     public static final Item TOPAZ_BOOTS = registerItem("topaz_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.TOPAZ_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
+    //Diamond crown
+    public static final Item DIAMOND_CROWN = registerItem("crown",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.DIAMOND_CROWN_ARMOR_MATERIAL, ArmorType.HELMET)));
+
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {

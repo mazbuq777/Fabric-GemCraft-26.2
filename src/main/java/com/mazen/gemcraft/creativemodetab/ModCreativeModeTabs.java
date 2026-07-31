@@ -88,6 +88,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TOPAZ_LEGGINGS);
                         output.accept(ModItems.TOPAZ_BOOTS);
 
+                        output.accept(ModItems.DIAMOND_CROWN);
+
 
                     }).build());
     //Tab end

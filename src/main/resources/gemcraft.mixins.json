@@ -3,7 +3,8 @@
 	"package": "com.mazen.gemcraft.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"VillagerCrownDiscountMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

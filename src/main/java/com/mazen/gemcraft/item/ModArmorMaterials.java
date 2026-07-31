@@ -6,6 +6,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.equipment.ArmorMaterial;
 import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.EquipmentAsset;
@@ -17,6 +18,7 @@ public class ModArmorMaterials {
     public static final ResourceKey<EquipmentAsset> RUBY_KEY = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "ruby"));
     public static final ResourceKey<EquipmentAsset> SAPPHIRE_KEY = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "sapphire"));
     public static final ResourceKey<EquipmentAsset> TOPAZ_KEY = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "topaz"));
+    public static final ResourceKey<EquipmentAsset> CROWN_KEY = ResourceKey.create(REGISTRY_KEY, Identifier.fromNamespaceAndPath(GemCraft.MOD_ID, "crown"));
 
     public static final ArmorMaterial RUBY_ARMOR_MATERIAL = new ArmorMaterial(750,
             ArmorMaterials.makeDefense(3, 6, 8, 3, 11),
@@ -29,4 +31,15 @@ public class ModArmorMaterials {
     public static final ArmorMaterial TOPAZ_ARMOR_MATERIAL = new ArmorMaterial(750,
             ArmorMaterials.makeDefense(3, 6, 8, 3, 11),
             10, SoundEvents.ARMOR_EQUIP_DIAMOND, 2, 0, ModTags.Items.TOPAZ_REPAIR, TOPAZ_KEY);
+
+    public static final ArmorMaterial DIAMOND_CROWN_ARMOR_MATERIAL = new ArmorMaterial(
+            ArmorMaterials.DIAMOND.durability(),
+            ArmorMaterials.DIAMOND.defense(),
+            ArmorMaterials.DIAMOND.enchantmentValue(),
+            ArmorMaterials.DIAMOND.equipSound(),
+            ArmorMaterials.DIAMOND.toughness(),
+            ArmorMaterials.DIAMOND.knockbackResistance(),
+            ItemTags.REPAIRS_DIAMOND_ARMOR,
+            CROWN_KEY
+    );
 }
