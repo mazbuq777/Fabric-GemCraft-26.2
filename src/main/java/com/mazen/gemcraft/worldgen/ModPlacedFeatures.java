@@ -18,14 +18,23 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> OVERWORLD_RUBY_ORE_PLACED_KEY = registerKey("overworld_ruby_ore");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_RUBY_ORE_MEDIUM_PLACED_KEY = registerKey("overworld_ruby_ore_medium");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_RUBY_ORE_LARGE_PLACED_KEY = registerKey("overworld_ruby_ore_large");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_RUBY_ORE_BURIED_PLACED_KEY = registerKey("overworld_ruby_ore_buried");
     public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore");
     public static final ResourceKey<PlacedFeature> END_RUBY_ORE_PLACED_KEY = registerKey("end_ruby_ore");
 
     public static final ResourceKey<PlacedFeature> OVERWORLD_SAPPHIRE_ORE_PLACED_KEY = registerKey("overworld_sapphire_ore");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_SAPPHIRE_ORE_MEDIUM_PLACED_KEY = registerKey("overworld_sapphire_ore_medium");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_SAPPHIRE_ORE_LARGE_PLACED_KEY = registerKey("overworld_sapphire_ore_large");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_SAPPHIRE_ORE_BURIED_PLACED_KEY = registerKey("overworld_sapphire_ore_buried");
     public static final ResourceKey<PlacedFeature> NETHER_SAPPHIRE_ORE_PLACED_KEY = registerKey("nether_sapphire_ore");
     public static final ResourceKey<PlacedFeature> END_SAPPHIRE_ORE_PLACED_KEY = registerKey("end_sapphire_ore");
 
     public static final ResourceKey<PlacedFeature> OVERWORLD_TOPAZ_ORE_PLACED_KEY = registerKey("overworld_topaz_ore");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_TOPAZ_ORE_MEDIUM_PLACED_KEY = registerKey("overworld_topaz_ore_medium");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_TOPAZ_ORE_LARGE_PLACED_KEY = registerKey("overworld_topaz_ore_large");
+    public static final ResourceKey<PlacedFeature> OVERWORLD_TOPAZ_ORE_BURIED_PLACED_KEY = registerKey("overworld_topaz_ore_buried");
     public static final ResourceKey<PlacedFeature> NETHER_TOPAZ_ORE_PLACED_KEY = registerKey("nether_topaz_ore");
     public static final ResourceKey<PlacedFeature> END_TOPAZ_ORE_PLACED_KEY = registerKey("end_topaz_ore");
 
@@ -34,8 +43,14 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, OVERWORLD_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_KEY),
-                OrePlacements.commonOrePlacement(12,
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(100))));
+                OrePlacements.commonOrePlacement(7, diamondHeightRange()));
+        register(context, OVERWORLD_RUBY_ORE_MEDIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_MEDIUM_KEY),
+                OrePlacements.commonOrePlacement(2,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-4))));
+        register(context, OVERWORLD_RUBY_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_LARGE_KEY),
+                OrePlacements.rareOrePlacement(9, diamondHeightRange()));
+        register(context, OVERWORLD_RUBY_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_RUBY_ORE_BURIED_KEY),
+                OrePlacements.commonOrePlacement(4, diamondHeightRange()));
         register(context, NETHER_RUBY_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_RUBY_ORE_KEY),
                 OrePlacements.commonOrePlacement(9,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(100))));
@@ -44,8 +59,14 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
         //===============================================================================================================================
         register(context, OVERWORLD_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_KEY),
-                OrePlacements.commonOrePlacement(12,
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(100))));
+                OrePlacements.commonOrePlacement(7, diamondHeightRange()));
+        register(context, OVERWORLD_SAPPHIRE_ORE_MEDIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_MEDIUM_KEY),
+                OrePlacements.commonOrePlacement(2,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-4))));
+        register(context, OVERWORLD_SAPPHIRE_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_LARGE_KEY),
+                OrePlacements.rareOrePlacement(9, diamondHeightRange()));
+        register(context, OVERWORLD_SAPPHIRE_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_SAPPHIRE_ORE_BURIED_KEY),
+                OrePlacements.commonOrePlacement(4, diamondHeightRange()));
         register(context, NETHER_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_SAPPHIRE_ORE_KEY),
                 OrePlacements.commonOrePlacement(9,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(100))));
@@ -54,8 +75,14 @@ public class ModPlacedFeatures {
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
         //===============================================================================================================================
         register(context, OVERWORLD_TOPAZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TOPAZ_ORE_KEY),
-                OrePlacements.commonOrePlacement(12,
-                        HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(100))));
+                OrePlacements.commonOrePlacement(7, diamondHeightRange()));
+        register(context, OVERWORLD_TOPAZ_ORE_MEDIUM_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TOPAZ_ORE_MEDIUM_KEY),
+                OrePlacements.commonOrePlacement(2,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(-4))));
+        register(context, OVERWORLD_TOPAZ_ORE_LARGE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TOPAZ_ORE_LARGE_KEY),
+                OrePlacements.rareOrePlacement(9, diamondHeightRange()));
+        register(context, OVERWORLD_TOPAZ_ORE_BURIED_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_TOPAZ_ORE_BURIED_KEY),
+                OrePlacements.commonOrePlacement(4, diamondHeightRange()));
         register(context, NETHER_TOPAZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_TOPAZ_ORE_KEY),
                 OrePlacements.commonOrePlacement(9,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-32), VerticalAnchor.absolute(100))));
@@ -63,6 +90,11 @@ public class ModPlacedFeatures {
                 OrePlacements.commonOrePlacement(12,
                         HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(100))));
         
+    }
+
+    private static HeightRangePlacement diamondHeightRange() {
+        // Vanilla diamond distribution: most common near the bottom of the Overworld.
+        return HeightRangePlacement.triangle(VerticalAnchor.aboveBottom(-80), VerticalAnchor.aboveBottom(80));
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

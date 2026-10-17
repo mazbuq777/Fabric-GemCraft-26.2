@@ -10,6 +10,12 @@ public class ModWorldGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.OVERWORLD_RUBY_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_RUBY_ORE_MEDIUM_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_RUBY_ORE_LARGE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_RUBY_ORE_BURIED_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.NETHER_RUBY_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Decoration.UNDERGROUND_ORES,
@@ -17,6 +23,12 @@ public class ModWorldGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.OVERWORLD_SAPPHIRE_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_SAPPHIRE_ORE_MEDIUM_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_SAPPHIRE_ORE_LARGE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_SAPPHIRE_ORE_BURIED_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.NETHER_SAPPHIRE_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Decoration.UNDERGROUND_ORES,
@@ -24,6 +36,12 @@ public class ModWorldGeneration {
 
         BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.OVERWORLD_TOPAZ_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_TOPAZ_ORE_MEDIUM_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_TOPAZ_ORE_LARGE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Decoration.UNDERGROUND_ORES,
+                ModPlacedFeatures.OVERWORLD_TOPAZ_ORE_BURIED_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.NETHER_TOPAZ_ORE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Decoration.UNDERGROUND_ORES,
